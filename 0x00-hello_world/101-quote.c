@@ -5,6 +5,7 @@
  *
  * Return - Always 1 (success)
  */
+int main(void)
 {
 	putchar('a');
 	putchar('n');
