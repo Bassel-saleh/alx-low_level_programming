@@ -8,12 +8,12 @@
  */
 int main(void)
 {
-	int n; l = abs(n % 10);
+	int n; l;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	int l = abs(n % 10);
+	l = abs(n % 10);
 
 	if (l > 5)
 	{
@@ -23,7 +23,7 @@ int main(void)
 	{
 		printf("the last digit of %d is %d and is 0\n", n, l);
 	}
-	if (0 < l < 6)
+	if (l < 6)
 	{
 		printf("the last digit of %d is %d and is less than 6 and not 0\n", n, l);
 	}
