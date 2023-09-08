@@ -5,6 +5,7 @@
  * Return: Always 0 (success)
  */
 int main(void)
+
 {
 	char n = '0';
 	while (n <= '9')
