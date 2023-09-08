@@ -7,9 +7,14 @@
 int main(void)
 
 {
-	int n = '0';
+	int n;
 
-	while (n <= 'F')
+	for (n = '0'; n <= '9';)
+	{
+		putchar(n);
+		n++;
+	}
+	for (n = 97; n <= 102;)
 	{
 		putchar(n);
 		n++;
