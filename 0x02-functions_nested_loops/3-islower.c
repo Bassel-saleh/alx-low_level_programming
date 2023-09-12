@@ -4,8 +4,6 @@
  */
 int _islower(int c)
 {
-	char c = 'c';
-
 	_islower(c);
 	return (0);
 }
