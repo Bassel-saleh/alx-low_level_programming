@@ -1,7 +1,6 @@
 #include "main.h"
 /**
  * jack_bauer - print every minute of the day
- * Return: Always 0 (success)
  */
 void jack_bauer(void)
 {
@@ -23,5 +22,4 @@ void jack_bauer(void)
 		b = 0;
 		a++;
 	}
-	return (0);
 }
