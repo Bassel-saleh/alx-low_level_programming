@@ -23,5 +23,5 @@ void jack_bauer(void)
 		b = 0;
 		a++;
 	}
-	return (0)
+	return (0);
 }
