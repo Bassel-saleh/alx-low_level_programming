@@ -6,10 +6,11 @@ void times_table(void)
 {
 	int a = 0;
 	int b = 0;
-	int c = a * b;
+	int c;
 
 	while (a <= '9')
 	{
+		c == a * b
 		while (b <= '9')
 		{
 			if (c <= '9')
