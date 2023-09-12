@@ -4,8 +4,8 @@
  */
 int _islower(int c)
 {
-	c >= a;
-	c <= z;
+	c >= 'a';
+	c <= 'z';
 	if (_islower(c))
 	{
 		return (1);
