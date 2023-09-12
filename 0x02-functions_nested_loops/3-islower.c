@@ -4,7 +4,7 @@
  */
 int _islower(int c)
 {
-	c = 'c'
+	c = 'c';
 	if (_islower(c))
 	{
 		_putchar('1');
