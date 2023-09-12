@@ -4,7 +4,7 @@
  */
 int _islower(int c)
 {
-	if (islower(c))
+	if (_islower('c'))
 	{
 		_putchar('1');
 		_putchar('\n');
@@ -12,6 +12,6 @@ int _islower(int c)
 	else
 	{
 		_putchar('0');
-		_putchar(\n');
+		_putchar('\n');
 }
 	
