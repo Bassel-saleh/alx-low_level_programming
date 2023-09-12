@@ -5,15 +5,23 @@
  */
 void jack_bauer(void)
 {
-	int a;
-	int b;
+	int a = 0;
+	int b = 0;
 
-	while (a = "00"; a <= "24"; a++)
+	while (a < 24)
 	{
-		while (b = "00"; b <= "60"; b++)
+		while (b < 60)
 		{
-			printf(a:b'\n');
+			_putchar(0 + (a / 10));
+			_putchar(0 + (a % 10));
+			_putchar(':');
+			_putchar(0 + (b / 10));
+			_putchar(0 + (b % 10));
+			_putchar('\n');
+			b++;
 		}
+		b = 0;
+		a++;
 	}
 	return (0)
 }
