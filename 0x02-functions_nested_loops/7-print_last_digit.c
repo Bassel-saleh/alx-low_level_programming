@@ -8,7 +8,14 @@ int print_last_digit(int n)
 {
 	int r;
 
-	r = (n % ('5' + '5'));
-	_putchar(r);
+	if (n < 0)
+	{
+		r = (n % 10) * -1;
+		_putchar(r);
+	}
+	else
+	{
+		r = (n % 10);
+		_putchar(r);
 	return (r);
 }
