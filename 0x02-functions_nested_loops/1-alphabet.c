@@ -1,14 +1,12 @@
 #include "main.h"
 /**
- * main -Entry point
- *
- * Return: Always 0 (success)
+ * print_alphabet - print alphabet
  */
 void print_alphabet(void)
 {
 	char a;
 
-	for (a = 97; a <= 122;a++)
+	for (a = 97; a <= 122; a++)
 	{
 		_putchar(a);
 	}
