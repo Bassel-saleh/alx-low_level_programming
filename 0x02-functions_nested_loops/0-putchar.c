@@ -6,6 +6,15 @@
  */
 int main(void)
 {
-	printf("_putchar\n");
+	char str[] = "_putcahr";
+	int p = 0;
+
+	while (str[p] != '\0')
+	{
+		char c = str[p];
+
+		_putchar(c);
+		p++;
+	}
 	return (0);
 }
