@@ -2,7 +2,7 @@
 /**
  * _abs - computes the absolute value of an integer
  * @r: is variable
- * Return:
+ * Return: is the absolute value of the int
  */
 int _abs(int r)
 {
@@ -10,7 +10,7 @@ int _abs(int r)
 	{
 		return (r);
 	}
-	else 
+	else
 	{
 		return (r * -1);
 	}
