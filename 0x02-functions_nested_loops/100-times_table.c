@@ -7,13 +7,14 @@
 void print_times_table(int n)
 {
 	int t;
+	int y;
 	int r;
 
 	if (n >= 0 && n <= 15)
 	{
-		for (t = 0; t <= 9; t++)
+		for (t = 0; t <= n; y = 0; y <= n; y++; t++)
 		{
-			r = n * t;
+			r = y * t;
 			if (r <= 9 && r != 0)
 			{
 				printf(",   %i", r);
@@ -35,7 +36,7 @@ void print_times_table(int n)
 				printf(",   %i", r);
 			}
 		}
-		_putchar('\n');
+		putchar('\n');
 	}
 }
 
