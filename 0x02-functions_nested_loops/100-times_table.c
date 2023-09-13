@@ -16,7 +16,7 @@ void print_times_table(int n)
 			r = n * t;
 			if (r <= 9 && r != 0)
 			{
-				pritnf(",   %i", r);
+				printf(",   %i", r);
 			}
 			else if (r > 9 && r <= 99)
 			{
