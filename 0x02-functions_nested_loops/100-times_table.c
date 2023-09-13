@@ -12,28 +12,31 @@ void print_times_table(int n)
 
 	if (n >= 0 && n <= 15)
 	{
-		for (t = 0; t <= n; y = 0; y <= n; y++; t++)
+		for (y = 0; y <= n; y++)
 		{
-			r = y * t;
-			if (r <= 9 && r != 0)
+			for (t = 0; t <= n; t++)
 			{
+				r = y * t;
+				if (r <= 9 && r != 0)
+				{
 				printf(",   %i", r);
-			}
-			else if (r > 9 && r <= 99)
-			{
+				}
+				else if (r > 9 && r <= 99)
+				{
 				printf(",  %i", r);
-			}
-			else if (r > 99)
-			{
+				}
+				else if (r > 99)
+				{
 				printf(", %i", r);
-			}
-			else if (t == 0)
-			{
+				}
+				else if (t == 0)
+				{
 				putchar('0');
-			}
-			else if (r == 0)
-			{
+				}
+				else if (r == 0)
+				{
 				printf(",   %i", r);
+				}
 			}
 		}
 		putchar('\n');
