@@ -4,7 +4,7 @@
  * print_to_98 - count from any number to 98
  * @n - is the number given to count from
  */
-void print_to_98(int n);
+void print_to_98(int n)
 {
 	while (n > 98)
 	{
