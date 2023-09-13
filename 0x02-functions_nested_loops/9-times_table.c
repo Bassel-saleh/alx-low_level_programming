@@ -4,13 +4,13 @@
  */
 void times_table(void)
 {
-	int a = 0;
-	int b = 0;
+	int a;
+	int b;
 	int c;
 
-	while (a <= '9')
+	for (a = '0'; a <= '9'' a++)
 	{
-		while (b <= '9')
+		while (b = '0'; b <= '9'; b++)
 		{
 			if (b == '0')
 			{
@@ -34,9 +34,7 @@ void times_table(void)
 				_putchar(c / 10);
 				_putchar(c % 10);
 			}
-			b++;
 		}
 		_putchar('\n');
-		a++;
 	}
 }
