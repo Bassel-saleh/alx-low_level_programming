@@ -1,0 +1,33 @@
+#include "main.h"
+/**
+ * print_to_98 - count from any number to 98
+ * @n - is the number given to count from
+ */
+void print_to_98(int n);
+{
+	int nu;
+
+	if (n <= 98)
+	{
+		for (nu = n; nu <= 98; nu++)
+		{
+			if (nu != 98 && nu > 9)
+			{
+				_putchar('0' + (nu / 10));
+				_putchar('0' + (nu % 10));
+				_putchar(',');
+				_putchar(' ');
+			}
+			else if (nu >= 0 && nu <= 9)
+			{
+				_putchar('0' + nu);
+				_putchar(',');
+				_putchar(' ');
+			}
+			else if (nu = 98)
+			{
+				_putchar('0' + (nu / 10));
+				_putchar('0' + (nu % 10));
+			}
+			else if 
+
