@@ -4,6 +4,7 @@
  * @c: it is the variable which is being checked
  * Return: 1 if it is uppercase 0 if it is lower case
  */
+
 int _isupper(int c)
 {
 	if (c >= 65 && c <= 90)
