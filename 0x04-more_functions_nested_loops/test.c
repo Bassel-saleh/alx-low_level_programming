@@ -2,22 +2,23 @@
 
 int main(void)
 {
+	int size = 10;
 	int a;
 	int b;
 	int c;
-	int d;
 
-	for (b = '0'; b <= '9'; b++)
-	{
-		for (a = '0'; a <= '9'; a++)
-		{
-			if (a >= 10)
-			{
-				putchar(a / 10 - '0');
-			}
-			putchar(a % 10 - '0');
-		}
+	if (size <= 0)
 		putchar('\n');
+
+	for (c = 1; c <= size; c++)
+	{
+		for (a = 1; a <= size; a++)
+		{
+			if (a <= (size - c))
+				putchar(' ');
+			else
+				putchar('#');
+		}
+	putchar('\n');
 	}
-	return (0);
 }
