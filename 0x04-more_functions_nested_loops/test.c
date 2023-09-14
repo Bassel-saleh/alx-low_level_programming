@@ -2,16 +2,20 @@
 
 int main(void)
 {
-	int c = 65;
+	int a;
+	int b;
 
-	if (c >= 65 && c <= 90)
+	for (b = '0'; b <= '9'; b++)
 	{
-		printf("%i: ", c);
-		return (1);
+		for (a = '0'; a <= 14; a++)
+		{
+			if (a > '9')
+			{
+				putchar(a / 10 + '0');
+			}
+			putchar(a % 10 + '0');
+		}
+		putchar('\n');
 	}
-	else if (c >= 97 && c <= 122)
-	{
-		printf("%i: ", c);
-		return (0);
-	}
+	return (0);
 }
