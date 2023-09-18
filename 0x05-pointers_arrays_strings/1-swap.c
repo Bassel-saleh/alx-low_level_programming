@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * void_swap_int - swaps the value of two variables 
+ * swap_int - swaps the value of two variables 
  * @a: first variable
  * @b: second variable
  * Return: no return
