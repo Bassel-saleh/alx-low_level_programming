@@ -16,7 +16,13 @@ void puts_half(char *str)
 	}
 
 	b = a;
-	a = b / 2;
+
+	if (a % '2' != '0')
+		a = (b - 1) / 2;
+
+	else
+		a = b / 2;
+
 	while (a <= b)
 	{
 		_putchar(str[a]);
