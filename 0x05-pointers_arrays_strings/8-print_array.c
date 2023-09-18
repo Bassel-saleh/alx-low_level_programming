@@ -17,5 +17,5 @@ void print_array(int *a, int n)
 		if (num + 1 != n)
 			printf(", ");
 	}
-	_putchar('\n');
+	putchar('\n');
 }
