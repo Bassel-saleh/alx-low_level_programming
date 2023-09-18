@@ -17,6 +17,6 @@ void print_array(int *a, int n)
 			_putchar(',');
 			_putchar(' ');
 		}
-		printf("%d", a[num])
+		printf("%d", a[num]);
 	}
 }
