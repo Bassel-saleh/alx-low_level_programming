@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_array - 
- * @a: is the variable array to be printed
+ * print_array - prints array of variables
+ i* @a: is the variable array to be printed
  * @n: is the number of arrays
  * Return: no return
  */
@@ -14,7 +14,7 @@ void print_array(int *a, int n)
 	{
 		printf("%d", a[num]);
 
-		if (num != (n - 1))
+		if ((num + 1) != n)
 			printf(", ");
 	}
 	_putchar('\n');
