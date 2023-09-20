@@ -13,7 +13,7 @@ char *cap_string(char *w)
 	{
 		for (j = 0; separators[j] != '\0'; j++)
 		{
-			if (w[i] == separators[j] && w[i + 1] >= 97 && w[i + 1] <= 122)
+			if (w[i] == separators[j] && w[(i + 1)] >= 97 && w[(i + 1)] <= 122)
 			{
 				w[i + 1] -= 32;
 			}
