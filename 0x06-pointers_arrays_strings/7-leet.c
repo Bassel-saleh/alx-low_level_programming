@@ -7,7 +7,7 @@
 char *leet(char *w)
 {
 	char leetspeak[] = "aAeEoOtTlL";
-	char leetcode[] = "443307711";
+	char leetcode[] = "4433007711";
 	int i, j;
 
 	for (i = 0; w[i] != '\0'; i++)
