@@ -6,17 +6,15 @@
  */
 char *cap_string(char *w)
 {
-	int i;
+	int i, j;
+	char separators[] = " \t\n,;.!?\"(){}";
 
-	i = 0;
-	while (w[i] != '\0')
+	for (i = '0'; w[i] != '\0';i++)
 	{
-		i++;
-		if (w[i] == ' ' || w[i] == '\n' || w[i] == '.' || i == 0)
+		for (j = 0; separators[j] != '\0'; j++)
 		{
-			i++;
-			if (w[i] >= 'a' && w[i] <= 'z')
-				w[i] -= 32;
+			if (w[i] == separators[j] && w[i + 1] >= 'a' && w[i + 1] <= 'z')
+				w[i + 1] -= 32;
 		}
 	}
 	return (w);
