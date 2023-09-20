@@ -11,6 +11,8 @@ char *cap_string(char *w)
 
 	for (i = 0; w[i] != '\0'; i++)
 	{
+		if (w[0] >= 97 && w[0] <= 122)
+			w[0] = w[0] - 32;
 		for (j = 0; separators[j] != '\0'; j++)
 		{
 			if (w[i] == separators[j] && w[(i + 1)] >= 97 && w[(i + 1)] <= 122)
