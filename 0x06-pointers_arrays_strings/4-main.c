@@ -38,3 +38,4 @@ int main(void)
 	reverse_array(a, sizeof(a) / sizeof(int));
 	print_array(a, sizeof(a) / sizeof(int));
 	return (0);
+}
