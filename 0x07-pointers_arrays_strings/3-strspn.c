@@ -3,35 +3,19 @@
  * _strspn - gets the length of a prefix substring
  * @s: pointer  which you want to search for characters from
  * @accept: pointer containing the set of characters you want to accept
- * Return: count
+ * Return: a
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int count = 0;
-	int isAccepted;
-	char *a;
+	unsigned int a, b;
 
-	while (*s != '\0')
+	for (a = 0; s[a] != '\0'; a++)
 	{
-		isAccepted = 0;
-		a = accept;
-
-		while (*a != '\0')
+		for (b = 0; accept[b] != s[a]; b++)
 		{
-			if (*s == *a)
-			{
-			isAccepted = '1';
-			break;
-			}
-			a++;
+			if (accept[b] == '\0')
+				return (a);
 		}
-		if (!isAccepted)
-		{
-			break;
-		}
-		count++;
-		s++;
 	}
-
-return (count);
+return (a);
 }
