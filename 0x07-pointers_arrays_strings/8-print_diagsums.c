@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_diagsums - 
- * @a:
- * @size:
+ * print_diagsums - prints the sum of every diagonal of a square matrix
+ * @a: is the matrix
+ * @size: the lentgh of the square
  * Return: no return
  */
 void print_diagsums(int *a, int size)
