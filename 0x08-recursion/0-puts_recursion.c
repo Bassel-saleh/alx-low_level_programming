@@ -18,6 +18,6 @@ int main()
 {
 	char *s;
 
-	puts_recursion(s);
+	_puts_recursion(s);
 	return (0);
 }
