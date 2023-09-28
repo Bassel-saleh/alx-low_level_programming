@@ -27,7 +27,6 @@ int is_prime_number(int n)
 		return (1);
 	else
 	{
-		int sqrt_n = (int)sqrt(n);
 		return (is_divisible(n, n - 1));
 	}
 }
