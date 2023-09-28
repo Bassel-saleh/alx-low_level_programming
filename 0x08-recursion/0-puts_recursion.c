@@ -14,10 +14,3 @@ void _puts_recursion(char *s)
 	_putchar(*s);
 	_puts_recursion(s + 1);
 }
-int main()
-{
-	char *str;
-
-	_puts_recursion(*str);
-	return (0);
-}
