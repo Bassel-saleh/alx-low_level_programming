@@ -1,9 +1,9 @@
 #include "main.h"
 #include <unistd.h>
 /**
- * main - Entry point
- *
- * Return: Always 0 (success)
+ * _putchar - print char
+ * @c: the character to be printed
+ * Return: the character
  */
 int _putchar(char c)
 {
