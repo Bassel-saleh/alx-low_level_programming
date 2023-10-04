@@ -2,9 +2,9 @@
 #include <stdlib.h>
 /**
  * argstostr - concatenates all the arguments of your program
- * @ac:
- * @av:
- * Return:
+ * @ac: number of arguments
+ * @av: array of arguments
+ * Return: result or null
  */
 char *argstostr(int ac, char **av)
 {
