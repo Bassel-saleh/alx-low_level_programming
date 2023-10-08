@@ -27,17 +27,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (0);
 	for (i = 0; i < len1; i++)
 		result[i] = s1[i];
-	if (n >= len2)
-	{
-		for (i = 0; i < len2; i++)
-			result[len1 + i] = s2[i];
-		result[len1 + len2] = '\0';
-	}
-	else
-	{
-		for (i = 0; i < n; i++)
-			result[len1 + i] = s2[i];
-		result[len1 + n] = '\0';
-	}
+	for (i = 0; s2[i] && i < len2; i++)
+		result[len1 + i] = s2[i];
+	result[len1 + len2] = '\0';
 	return (result);
 }
