@@ -10,13 +10,15 @@ int _strlen(char *str)
 {
 	int len;
 
-	for (len = 0; str[len] != 0; len++);
+	for (len = 0; str[len] != 0; len++)
+		;
 	return (0);
 }
 
 /**
- * _strdup - Create a duplicate of a string
- * @str: The input string
+ * _strcpy - copy a string into another
+ * @dest: destination string
+ * @src: source string
  * Return: Pointer to the duplicated string, or NULL on failure
  */
 char *_strcpy(char *dest, char *src)
@@ -33,6 +35,7 @@ char *_strcpy(char *dest, char *src)
  * @name: name of the dog
  * @age: age of the dog
  * @owner: owner's name
+ * Return: ndog
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -57,16 +60,16 @@ dog_t *new_dog(char *name, float age, char *owner)
 		ndog->name = 0;
 
 	if (owner != 0)
-        {
-                ownercpy = malloc(_strlen(owner) + 1);
-                if (ownercpy == 0)
-                {
-                        free(ndog);
-                        return (0);
-                }
-                ndog->owner = _strcpy(ownercpy, owner);
-        }
-        else
-                ndog->owner = 0;
+	{
+		ownercpy = malloc(_strlen(owner) + 1);
+		if (ownercpy == 0)
+		{
+			free(ndog);
+			return (0);
+		}
+		ndog->owner = _strcpy(ownercpy, owner);
+	}
+	else
+		ndog->owner = 0;
 	return (ndog);
 }
