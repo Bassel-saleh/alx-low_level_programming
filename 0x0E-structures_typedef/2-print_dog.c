@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * print_dog - print dog info
- * d: string which contain dog info
+ * @d: string which contain dog info
  */
 void print_dog(struct dog *d)
 {
