@@ -1,5 +1,6 @@
 #include "dog.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * _strlen - Calculate the length of a string
  * @str: The input string
@@ -7,10 +8,9 @@
  */
 int _strlen(char *str)
 {
-	int len = 0;
+	int len;
 
-	while (str != 0)
-		len++;
+	for (len = 0; str[len] != 0; len++);
 	return (0);
 }
 
@@ -19,18 +19,13 @@ int _strlen(char *str)
  * @str: The input string
  * Return: Pointer to the duplicated string, or NULL on failure
  */
-char *_strdup(char *str)
+char *_strcpy(char *dest, char *src)
 {
-	int len, i;
-	char *dup;
+	int i;
 
-	len = _strlen(str);
-	dup = malloc(len + 1);
-	if (dup == null)
-		return (0);
-	for (i = 0; i<= len; i++)
-		dup[i] = str[i];
-	return (dup);
+	for (i = 0; i <= _strlen(src); i++)
+		dest[i] = src[i];
+	return (dest);
 }
 
 /**
@@ -41,17 +36,37 @@ char *_strdup(char *str)
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	if (new_dog->name == 0 || new_dog->owner == 0)
+	dog_t *ndog;
+	char *namecpy, *ownercpy;
+
+	ndog = malloc(sizeof(dog_t));
+	if (ndog == 0)
 		return (0);
-	new_dog->name = _strdup(name);
-	new_dog->owner = _strdup(owner);
-	if (new_dog->name == 0 || new_dog->owner == 0)
+	ndog->age = age;
+	if (name != 0)
 	{
-		free(new_dog->name);
-		free(new_dog->owner);
-		free(new_dog);
-		return (0);
+		namecpy = malloc(_strlen(name) + 1);
+		if (namecpy == 0)
+		{
+			free(ndog);
+			return (0);
+		}
+		ndog->name = _strcpy(namecpy, name);
 	}
-	new_dog->age = age;
-	return (new_dog);
+	else
+		ndog->name = 0;
+
+	if (owner != 0)
+        {
+                ownercpy = malloc(_strlen(owner) + 1);
+                if (ownercpy == 0)
+                {
+                        free(ndog);
+                        return (0);
+                }
+                ndog->owner = _strcpy(ownercpy, owner);
+        }
+        else
+                ndog->owner = 0;
+	return (ndog);
 }
