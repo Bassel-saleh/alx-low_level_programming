@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
+ * main - prints the opcodes
+ * @argc: argumenst number
+ * @argv: argumenst array
+ * Return: 0 (success)
  */
 int main(int argc, char *argv[])
 {
