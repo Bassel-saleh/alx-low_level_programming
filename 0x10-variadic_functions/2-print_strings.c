@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
- * print_string - print strings with separator between them
+ * print_strings - print strings with separator between them
  * @separator: seprator string between strings
  * @n: number of strings to be printed
  */
