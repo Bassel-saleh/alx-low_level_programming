@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdarg.h>
+#include "variadic_functions.h"
 /**
  * print_char - print char type data
  * @list: is the list of data types
@@ -50,7 +51,7 @@ void print_str("%s", va_arg(list, char *))
  */
 void print_all(const char * const format, ...)
 {
-	char *separator;
+	char *separator = "";
 	int i, j;
 	va_list list;
 

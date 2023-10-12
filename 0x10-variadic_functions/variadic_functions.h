@@ -1,6 +1,8 @@
 #ifndef VARIADIC_FUNCTIONS_H
 #define VARIADIC_FUNCTIONS_H
 
+#include <stdarg.h>
+
 /**
  * struct datatype - strct datatype
  * @datatpe: the data type to print correctly
@@ -9,7 +11,7 @@
 typedef struct datatype
 {
 	char choice;
-	void (*f)(list);
+	void (*f)(char *list);
 } datatype;
 
 int sum_them_all(const unsigned int n, ...);
