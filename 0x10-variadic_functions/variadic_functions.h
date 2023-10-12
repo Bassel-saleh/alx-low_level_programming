@@ -4,14 +4,14 @@
 #include <stdarg.h>
 
 /**
- * struct datatype - strct datatype
+ * struct data - strct datatype
  * @datatpe: the data type to print correctly
  * @f: the function to be used
  */
-typedef struct datatype
+typedef struct data
 {
 	char choice;
-	void (*f)(char *list);
+	void (*f)(va_list);
 } datatype;
 
 int sum_them_all(const unsigned int n, ...);

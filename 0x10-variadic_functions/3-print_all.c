@@ -32,7 +32,7 @@ void print_float(va_list list)
  * print_str - print string type data
  * @list: is the list of data types
  */
-void print_str("%s", va_arg(list, char *))
+void print_str(va_list list)
 {
 	char *s;
 
