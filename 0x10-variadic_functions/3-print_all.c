@@ -7,7 +7,7 @@
  */
 void print_char(va_list list)
 {
-	printf("%c", va_arg(list, char));
+	printf("%c", va_arg(list, int));
 }
 
 /**
@@ -71,7 +71,7 @@ void print_all(const char * const format, ...)
 			if (type[i].choice == format[j])
 			{
 				printf("%s", separator);				
-				choice[i].f(list);
+				type[i].f(list);
 				separator = ", ";
 			}
 			i++;
