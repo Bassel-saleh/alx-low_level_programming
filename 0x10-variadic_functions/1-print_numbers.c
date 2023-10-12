@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * print_numbers - print constant ints
- * @separators: are separators between numbers
+ * @separator: are separators between numbers
  * @n: the number of constants
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
@@ -11,7 +11,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	int num;
 
-	va_start (args, n);
+	va_start(args, n);
 	for (i = 0; i < n; i++)
 	{
 		num = va_arg(args, int);
