@@ -52,7 +52,7 @@ void print_all(const char * const format, ...)
 {
 	char *separator;
 	int i, j;
-	va_list args;
+	va_list list;
 
 	datatype type[] = {
 		{'c', print_char},
@@ -60,7 +60,7 @@ void print_all(const char * const format, ...)
 		{'f', print_float},
 		{'s', print_str},
 	};
-	va_start (args, format);
+	va_start (list, format);
 	j = 0;
 	while (format != 0 && format[j] != '\0')
 	{
@@ -77,6 +77,6 @@ void print_all(const char * const format, ...)
 		}
 		j++;
 	}
-	va_end(args);
+	va_end(list);
 	printf("\n");
 }
