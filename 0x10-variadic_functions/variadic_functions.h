@@ -4,11 +4,11 @@
 #include <stdarg.h>
 
 /**
- * struct data - strct datatype
- * @datatpe: the data type to print correctly
+ * struct datatype - struct datatype
  * @f: the function to be used
+ * @choice: is the datatyype choice
  */
-typedef struct data
+typedef struct datatype
 {
 	char choice;
 	void (*f)(va_list);

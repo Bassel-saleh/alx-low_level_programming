@@ -46,7 +46,7 @@ void print_str(va_list list)
 }
 
 /**
- * pritn_all - prints everything
+ * print_all - prints everything
  * @format: the format to be printed
  */
 void print_all(const char * const format, ...)
@@ -61,7 +61,7 @@ void print_all(const char * const format, ...)
 		{'f', print_float},
 		{'s', print_str},
 	};
-	va_start (list, format);
+	va_start(list, format);
 	j = 0;
 	while (format != 0 && format[j] != '\0')
 	{
@@ -70,7 +70,7 @@ void print_all(const char * const format, ...)
 		{
 			if (type[i].choice == format[j])
 			{
-				printf("%s", separator);				
+				printf("%s", separator);
 				type[i].f(list);
 				separator = ", ";
 			}
