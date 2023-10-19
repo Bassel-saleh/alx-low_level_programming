@@ -2,6 +2,7 @@
 #include <stdio.h>
 /**
  * print_list - prints any linked list
+ * @h: the list to be printed
  * Return: number of nodes
  */
 size_t print_list(const list_t *h)
