@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * get_nodeint_at_index - a function that returns the nth node of 
+ * get_nodeint_at_index - a function that returns the nth node of
  * a listint_t linked list
  * @head: the head of the linked list
  * @index: the number of nodes to be returned
