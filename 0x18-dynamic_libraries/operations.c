@@ -1,54 +1,54 @@
 /**
- * op_add - adds two numbers
+ * add - adds two numbers
  * @a: first integer
  * @b: second integer
  * Return: result
  */
-int op_add(int a, int b)
+int add(int a, int b)
 {
 	return (a + b);
 }
 
 /**
- * op_sub - subtracts two numbers
+ * sub - subtracts two numbers
  * @a: first integer
  * @b: second integer
  * Return: result
  */
-int op_sub(int a, int b)
+int sub(int a, int b)
 {
 	return (a - b);
 }
 
 /**
- * op_mul - multiply two numbers
+ * mul - multiply two numbers
  * @a: first integer
  * @b: second integer
  * Return: result
  */
-int op_mul(int a, int b)
+int mul(int a, int b)
 {
 	return (a * b);
 }
 
 /**
- * op_div - divides two numbers
+ * div - divides two numbers
  * @a: first integer
  * @b: second integer
  * Return: result
  */
-int op_div(int a, int b)
+int div(int a, int b)
 {
 	return (a / b);
 }
 
 /**
- * op_mod - calculates remainder
+ * mod - calculates remainder
  * @a: first integer
  * @b: second integer
  * Return: result
  */
-int op_mod(int a, int b)
+int mod(int a, int b)
 {
 	return (a % b);
 }
